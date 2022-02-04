@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивный Полноэкранный анимированный Липкий заголовок с использованием CSS и ванильного Javascript</title>
+    <link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+    
+    <header>
+        <img src="./img/image 50.png" class="banner">
+        <a href="#" class="logo">I Soft</a>
+        <div class="toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Responsive Fullscreen Animated Sticky Header</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quis optio, nihil natus facere pariatur laborum, dolorem quaerat aperiam sapiente quae voluptatem laboriosam explicabo reiciendis aliquid consequatur ex fuga temporibus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, quo velit. Commodi reprehenderit inventore dolorem possimus cum consectetur dicta ut, expedita iusto unde natus fuga debitis repudiandae laboriosam aliquam quo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia commodi eligendi quas, sequi delectus deserunt quae eius quasi ullam minus omnis aliquid libero doloremque voluptatum! Impedit neque quia porro consequuntur! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus optio minima tenetur, aliquam, sit deleniti, doloremque vel consectetur obcaecati illo veritatis consequatur voluptate totam harum quis? Minima fugiat voluptate laboriosam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quis optio, nihil natus facere pariatur laborum, dolorem quaerat aperiam sapiente quae voluptatem laboriosam explicabo reiciendis aliquid consequatur ex fuga temporibus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, quo velit. Commodi reprehenderit inventore dolorem possimus cum consectetur dicta ut, expedita iusto unde natus fuga debitis repudiandae laboriosam aliquam quo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia commodi eligendi quas, sequi delectus deserunt quae eius quasi ullam minus omnis aliquid libero doloremque voluptatum! Impedit neque quia porro consequuntur! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus optio minima tenetur, aliquam, sit deleniti, doloremque vel consectetur obcaecati illo veritatis consequatur voluptate totam harum quis? Minima fugiat voluptate laboriosam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quis optio, nihil natus facere pariatur laborum, dolorem quaerat aperiam sapiente quae voluptatem laboriosam explicabo reiciendis aliquid consequatur ex fuga temporibus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, quo velit. Commodi reprehenderit inventore dolorem possimus cum consectetur dicta ut, expedita iusto unde natus fuga debitis repudiandae laboriosam aliquam quo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia commodi eligendi quas, sequi delectus deserunt quae eius quasi ullam minus omnis aliquid libero doloremque voluptatum! Impedit neque quia porro consequuntur! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus optio minima tenetur, aliquam, sit deleniti, doloremque vel consectetur obcaecati illo veritatis consequatur voluptate totam harum quis? Minima fugiat voluptate laboriosam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quis optio, nihil natus facere pariatur laborum, dolorem quaerat aperiam sapiente quae voluptatem laboriosam explicabo reiciendis aliquid consequatur ex fuga temporibus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, quo velit. Commodi reprehenderit inventore dolorem possimus cum consectetur dicta ut, expedita iusto unde natus fuga debitis repudiandae laboriosam aliquam quo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia commodi eligendi quas, sequi delectus deserunt quae eius quasi ullam minus omnis aliquid libero doloremque voluptatum! Impedit neque quia porro consequuntur! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus optio minima tenetur, aliquam, sit deleniti, doloremque vel consectetur obcaecati illo veritatis consequatur voluptate totam harum quis? Minima fugiat voluptate laboriosam!</p>
+    </section>
+
+    <script>
+        window.addEventListener("scroll",function(){
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        const navigation = document.querySelector('nav');
+        document.querySelector('.toggle').onclick = function(){
+            this.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
